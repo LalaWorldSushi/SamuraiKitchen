@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f5efe5">
+  <meta name="description" content="Menu digitale bilingue di Samurai Kitchen, Aviano.">
+  <title>Samurai Kitchen | Menu</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="#top" aria-label="Samurai Kitchen">
+      <span class="wordmark__seal">侍</span>
+      <span><b>samurai</b><small>Kitchen · Aviano · Dal 2016</small></span>
+    </a>
+    <button class="language" id="languageButton" type="button" aria-label="Change language">
+      <span id="languageLabel">EN</span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__image" role="img" aria-label="Interno di Samurai Kitchen"></div>
+      <div class="hero__content">
+        <p class="kicker" data-it="AVIANO · DAL 2016" data-en="AVIANO · SINCE 2016">AVIANO · DAL 2016</p>
+        <h1 data-it="Benvenuti da Samurai." data-en="Welcome to Samurai.">Benvenuti da Samurai.</h1>
+        <p data-it="Cucina giapponese e cinese, preparata con cura e servita con calore."
+           data-en="Japanese and Chinese cooking, prepared with care and served with warmth.">
+          Cucina giapponese e cinese, preparata con cura e servita con calore.
+        </p>
+        <a class="button button--primary" href="#menu" data-it="Scopri il menu" data-en="Explore the menu">Scopri il menu</a>
+      </div>
+    </section>
+
+    <section class="intro">
+      <p class="kicker" data-it="IL NOSTRO MENU" data-en="OUR MENU">IL NOSTRO MENU</p>
+      <h2 data-it="Trova subito ciò che ami." data-en="Find what you love.">Trova subito ciò che ami.</h2>
+      <p data-it="Tocca una categoria. Ogni piatto mantiene il numero originale per ordinare facilmente."
+         data-en="Tap a category. Every dish keeps its original number for easy ordering.">
+        Tocca una categoria. Ogni piatto mantiene il numero originale per ordinare facilmente.
+      </p>
+    </section>
+
+    <section id="menu" class="menu-section" aria-labelledby="menuTitle">
+      <h2 class="sr-only" id="menuTitle">Menu</h2>
+      <div class="category-grid" id="categoryGrid"></div>
+
+      <div class="menu-browser" id="menuBrowser" hidden>
+        <div class="menu-browser__header">
+          <div>
+            <p class="kicker" id="categoryKicker">MENU</p>
+            <h2 id="categoryTitle"></h2>
+            <p id="categoryDescription"></p>
+          </div>
+          <button class="close-button" id="closeCategory" type="button" aria-label="Close">×</button>
+        </div>
+        <div class="menu-pages" id="menuPages"></div>
+        <div class="menu-browser__footer">
+          <button class="button button--dark" id="backToCategories" type="button"
+                  data-it="Torna alle categorie" data-en="Back to categories">Torna alle categorie</button>
+          <a class="text-link" href="original-menu.pdf" target="_blank" rel="noopener"
+             data-it="Apri il menu originale in PDF" data-en="Open the original PDF menu">
+            Apri il menu originale in PDF
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="delivery">
+      <div>
+        <p class="kicker" data-it="A CASA TUA" data-en="AT HOME">A CASA TUA</p>
+        <h2 data-it="Preferisci la consegna?" data-en="Prefer delivery?">Preferisci la consegna?</h2>
+        <p data-it="Ordina direttamente dal servizio che preferisci."
+           data-en="Order directly from the service you prefer.">Ordina direttamente dal servizio che preferisci.</p>
+      </div>
+      <div class="delivery__buttons">
+        <a class="service-card" target="_blank" rel="noopener noreferrer"
+           href="https://www.justeat.it/restaurants-samurai-sushi-pordenone/menu?serviceType=collection&utm_source=google&utm_medium=organic&utm_campaign=foodorder">
+          <span>Just Eat</span><b data-it="Ordina ora →" data-en="Order now →">Ordina ora →</b>
+        </a>
+        <a class="service-card" target="_blank" rel="noopener noreferrer"
+           href="https://www.foodracers.com/it/cities/aviano/restaurants/samurai-sushi-aviano">
+          <span>Foodracers</span><b data-it="Ordina ora →" data-en="Order now →">Ordina ora →</b>
+        </a>
+      </div>
+    </section>
+
+    <section class="gallery gallery--single">
+      <div class="gallery__heading">
+        <p class="kicker" data-it="IL RISTORANTE" data-en="THE RESTAURANT">IL RISTORANTE</p>
+        <h2 data-it="Un angolo accogliente ad Aviano." data-en="A welcoming corner of Aviano.">
+          Un angolo accogliente ad Aviano.
+        </h2>
+      </div>
+      <figure class="gallery__feature">
+        <img src="assets/photos/restaurant.webp" alt="Bar, lounge e privé di Samurai Kitchen">
+      </figure>
+    </section>
+
+    <section class="lala">
+      <figure class="lala__portrait">
+        <img src="assets/photos/chef-lala-2016.webp" alt="Chef Lala, fondatrice di Samurai Kitchen">
+      </figure>
+      <div>
+        <p class="kicker" data-it="CHEF E FONDATRICE" data-en="CHEF AND FOUNDER">CHEF E FONDATRICE</p>
+        <h2 data-it="Incontra Chef Lala." data-en="Meet Chef Lala.">Incontra Chef Lala.</h2>
+        <div data-it="Mi chiamo Lala e nel 2016 ho aperto Samurai Kitchen con un sogno semplice: creare un luogo dove le persone potessero sentirsi a casa davanti a un buon pasto. Da allora ho avuto il privilegio di accogliere famiglie italiane, personale della Base Aerea di Aviano e ospiti provenienti da tutto il mondo. Grazie per aver scelto il mio ristorante. Spero di rivedervi presto."
+             data-en="My name is Lala, and in 2016 I opened Samurai Kitchen with one simple dream: to create a place where people could feel at home while sharing a good meal. Since then, I have had the privilege of welcoming local Italian families, members of Aviano Air Base, and guests from around the world. Thank you for choosing my restaurant. I hope to welcome you back again soon.">
+          Mi chiamo Lala e nel 2016 ho aperto Samurai Kitchen con un sogno semplice: creare un luogo dove le persone potessero sentirsi a casa davanti a un buon pasto. Da allora ho avuto il privilegio di accogliere famiglie italiane, personale della Base Aerea di Aviano e ospiti provenienti da tutto il mondo. Grazie per aver scelto il mio ristorante. Spero di rivedervi presto.
+        </div>
+        <p class="signature">Con affetto, <em>Lala</em></p>
+      </div>
+    </section>
+
+    <section class="connect">
+      <div>
+        <p class="kicker" data-it="RESTA IN CONTATTO" data-en="STAY CONNECTED">RESTA IN CONTATTO</p>
+        <h2 data-it="Parla con noi." data-en="Talk with us.">Parla con noi.</h2>
+        <p data-it="Scrivici direttamente oppure seguici su Facebook per novità e aggiornamenti."
+           data-en="Message us directly or follow us on Facebook for news and updates.">
+          Scrivici direttamente oppure seguici su Facebook per novità e aggiornamenti.
+        </p>
+      </div>
+      <div class="connect__links">
+        <a class="social-card social-card--whatsapp" href="https://wa.me/393312755555" target="_blank" rel="noopener noreferrer">
+          <span>WhatsApp</span>
+          <b data-it="Scrivici →" data-en="Message us →">Scrivici →</b>
+        </a>
+        <a class="social-card social-card--facebook" href="https://www.facebook.com/samuraisushipn" target="_blank" rel="noopener noreferrer">
+          <span>Facebook</span>
+          <b data-it="Seguici →" data-en="Follow us →">Seguici →</b>
+        </a>
+        <a class="social-card social-card--instagram" href="https://www.instagram.com/samurai_sushi_roveredo" target="_blank" rel="noopener noreferrer">
+          <span>Instagram</span>
+          <b data-it="Seguici →" data-en="Follow us →">Seguici →</b>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wordmark wordmark--footer">
+      <span class="wordmark__seal">侍</span>
+      <span><b>samurai</b><small>Kitchen · Aviano · Dal 2016</small></span>
+    </div>
+    <p data-it="Grazie per sostenere un ristorante indipendente."
+       data-en="Thank you for supporting an independent restaurant.">
+      Grazie per sostenere un ristorante indipendente.
+    </p>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox">
+    <button id="closeLightbox" type="button" aria-label="Close">×</button>
+    <img id="lightboxImage" alt="">
+  </dialog>
+</body>
+</html>
