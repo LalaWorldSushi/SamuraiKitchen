@@ -51,7 +51,7 @@ button { font: inherit; }
 .hero { min-height: calc(100svh - 74px); display: grid; grid-template-columns: 1.2fr 1fr; }
 .hero__image {
   min-height: 520px;
-  background: linear-gradient(90deg, transparent 62%, var(--cream)), url("assets/photos/hero.webp") center / cover no-repeat;
+  background: linear-gradient(90deg, transparent 62%, var(--cream)), url("hero.webp") center / cover no-repeat;
 }
 .hero__content { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: clamp(38px, 7vw, 100px); }
 .kicker { margin: 0 0 12px; color: var(--burgundy); font-size: 12px; font-weight: 700; letter-spacing: .2em; }
@@ -146,7 +146,7 @@ footer p { color: var(--muted); font-size: 13px; }
 
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; }
-  .hero__image { min-height: 52svh; background: linear-gradient(to bottom, transparent 52%, var(--cream)), url("assets/photos/hero.webp") center / cover no-repeat; }
+  .hero__image { min-height: 52svh; background: linear-gradient(to bottom, transparent 52%, var(--cream)), url("hero.webp") center / cover no-repeat; }
   .hero__content { padding-top: 20px; }
   .category-grid { grid-template-columns: repeat(2, 1fr); }
   .delivery, .lala, .connect { grid-template-columns: 1fr; }
